@@ -39,10 +39,10 @@ CW = 0.6  # JetBrains Mono advance in em
 
 UPSTREAM = []
 PROJECTS = [
-    ("ECI-Framework", "RESEARCH", "Quantum-inspired autonomous AI framework: quantum computing, consciousness metrics, distributed governance."),
-    ("LSTM-AIChatPersian", "NLP", "Persian RAG chatbot using LSTM with attention, self-supervised learning, Redis recall."),
-    ("ultimate-crypto-trading-bot", "AI / FINTECH", "AI-enhanced quantitative crypto intelligence: technical, on-chain and sentiment analysis."),
-    ("HackersPlaybook", "SECURITY", "Comprehensive ethical hacking and cybersecurity playbook with practical tooling."),
+    ("ECI-Framework", "RESEARCH", "Quantum-inspired autonomous AI framework with consciousness metrics and distributed governance."),
+    ("VortexAI-Persian", "NLP", "Advanced Persian NLP framework: text generation, QA, sentiment analysis with self-improvement."),
+    ("LSTM-AIChatPersian", "NLP", "Persian RAG chatbot using LSTM with attention, self-supervised learning and Redis recall."),
+    ("Reinforcement-Learning_AD-Optimization", "RESEARCH", "RL-based real-time advertising optimization with DQN and LLM co-agent."),
 ]
 # repo name -> (shown name, link) where the card is not a plain repo link
 PROJECT_OVERRIDE = {}
@@ -55,14 +55,15 @@ def project_card(v, name, tag, desc):
 STACK = [
     ("languages", ["Python", "JavaScript", "SQL"]),
     ("frameworks", ["PyTorch", "FastAPI", "Streamlit", "Transformers"]),
-    ("ai / ml", ["LLMs", "RAG", "Deep Learning", "Reinforcement Learning", "Fine-Tuning"]),
+    ("ai / ml", ["LLMs", "RAG", "Deep Learning", "Reinforcement Learning", "Fine-Tuning", "Multi-Agent"]),
+    ("enterprise", ["DB-GPT", "Enterprise AI", "Database Integration", "Decision Support"]),
     ("nlp", ["Persian NLP", "Tokenization", "Embeddings", "BLEU", "ROUGE", "METEOR"]),
 ]
 LINKS = [
     ("gh", "GitHub", "Arash-Mansourpour", "https://github.com/Arash-Mansourpour"),
     ("web", "Website", "arshava.framer.ai", "https://arshava.framer.ai/"),
     ("mail", "Email", "arash_mansourpour@proton.me", "mailto:arash_mansourpour@proton.me"),
-    ("zn", "Zenodo", "ECI Framework", "https://zenodo.org/records/17566518"),
+    ("zn", "Publications", "Zenodo / DOI", "https://zenodo.org/records/17566518"),
 ]
 LANG_TINTS = ["#39FF14", "#2FCB16", "#1F8A18", "#16461A", "#0E3A14"]
 
@@ -423,7 +424,7 @@ def boot(doc, d):
     nm = "ARASH MANSOURPOUR"
     c.add(f'<text class="glow" x="{PAD}" y="160" font-size="60" font-weight="700" fill="{ACC}" letter-spacing="1.2" filter="url(#blur)">{nm}</text>')
     c.add(f'<text x="{PAD}" y="160" font-size="60" font-weight="700" fill="{WH}" letter-spacing="1.2">{nm}</text>')
-    lines = ["AI Lead | AI Research Engineer", "Neural Architect | Persian NLP Specialist", "Karaj, Alborz, Iran · arshava.framer.ai"]
+    lines = ["AI Lead, Kavir Motor", "Independent AI Researcher · Persian NLP Specialist", "Karaj, Alborz, Iran · arshava.framer.ai"]
     for i, ln in enumerate(lines):
         y = 204 + i * 28
         c.add(f'<text x="{PAD}" y="{y}" font-size="14" fill="{ACC}">&gt;&gt;</text>')
@@ -756,7 +757,9 @@ def img_tag(it, ver):
 def text_version(d, v):
     L = []
     L.append("**Arash Mansourpour**\n")
-    L += ["- AI Lead | AI Research Engineer", "- Neural Architect | Persian NLP Specialist", "- Karaj, Alborz, Iran · [arshava.framer.ai](https://arshava.framer.ai/)\n"]
+    L += ["- AI Lead, Kavir Motor", "- Independent AI Researcher · Persian NLP Specialist", "- Karaj, Alborz, Iran · [arshava.framer.ai](https://arshava.framer.ai/)\n"]
+    L.append("Results-oriented AI Lead and AI Research Engineer specializing in LLMs, RAG, neural architectures and Persian NLP. "
+             "Leading enterprise AI initiatives at Kavir Motor and independent research through the ECI Framework.\n")
     L.append("**Links**\n")
     for k, name, handle, url in LINKS:
         L.append(f"- [{name}: {handle}]({url})")
@@ -764,7 +767,7 @@ def text_version(d, v):
     L += [f"- Stars across repos: {fmt(v['stars'])}",
           f"- Contributions, last 365 days: {fmt(v['total'])} (active {v['active']} of {len(v['days'])} days)",
           f"- Pull requests: {fmt(d['prs'])} ({fmt(d['merged'])} merged)",
-          f"- Streak: {v['streak']} days current, {v['longest']} longest",
+          f"- Streak: {v['streak']} {'day' if v['streak']==1 else 'days'} current, {v['longest']} longest",
           f"- Followers: {fmt(d['user']['followers'])}, forks: {fmt(v['forks'])}, public repos: {fmt(d['user']['public_repos'])}, member since {v['member']}",
           "- Top languages: " + ", ".join(f"{k} ({n})" for k, n in v["langs"])]
 
