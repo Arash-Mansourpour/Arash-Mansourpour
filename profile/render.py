@@ -45,7 +45,7 @@ PROJECTS = [
     ("HackersPlaybook", "SECURITY", "Comprehensive ethical hacking and cybersecurity playbook with practical tooling."),
 ]
 # repo name -> (shown name, link) where the card is not a plain repo link
-PROJECT_OVERRIDE = {"adityareddy-dev.github.io": ("adityareddy.dev", "https://adityareddy.dev")}
+PROJECT_OVERRIDE = {}
 
 
 def project_card(v, name, tag, desc):
@@ -620,7 +620,7 @@ def upstream_rows(doc, d):
     gap, tw, h = 8, 264, 98
     head = 92
     c = Canvas(WIDTH, head + 2 * h + gap + 26, 0, doc.y, left=True, right=True, top=True, label="04 upstream")
-    section_head_draw(c, "04", "upstream", "gh pr list --author adityareddy-dev --state merged --org open-telemetry", 22)
+    section_head_draw(c, "04", "upstream", "gh pr list --author Arash-Mansourpour", 22)
     for r in range(2):
         x = 0
         for i in range(3):
@@ -639,7 +639,7 @@ def upstream_rows(doc, d):
             t.text(lp + 14, 84, fit(u["caption"], 11.5, tw - 28), 11.5, DIM)
             place(c, t, x, head + r * (h + gap))
             x += w
-    doc.row([doc.image("upstream.svg", c, "https://github.com/pulls?q=is%3Apr+author%3Aadityareddy-dev+org%3Aopen-telemetry+is%3Amerged")])
+    doc.row([doc.image("upstream.svg", c, "https://github.com/Arash-Mansourpour")])
 
 
 def project_rows(doc, d, v):
