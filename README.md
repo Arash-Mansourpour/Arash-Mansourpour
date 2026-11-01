@@ -1,5 +1,5 @@
 <!-- console:start -->
-<p align="center"><img align="top" src="profile/out/boot.svg?v=c15d9f54" width="100%" alt="boot, SYS://ARASH-MANSOURPOUR"><a href="https://arshava.framer.ai/"><img align="top" src="profile/out/links.svg?v=87ef356c" width="100%" alt="01 links"></a><img align="top" src="profile/out/stats.svg?v=6291979e" width="100%" alt="stats"><img align="top" src="profile/out/skyline.svg?v=a88bc98f" width="100%" alt="contribution skyline, one building per day"><a href="https://github.com/Arash-Mansourpour?tab=repositories"><img align="top" src="profile/out/projects.svg?v=6295314e" width="100%" alt="04 projects"></a><img align="top" src="profile/out/stack.svg?v=c5f3f211" width="100%" alt="stack"><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Mansourpour%2C+Arash%22"><img align="top" src="profile/out/writing.svg?v=704cba04" width="100%" alt="06 publications"></a><img align="top" src="profile/out/exit.svg?v=71d86da1" width="100%" alt="exit"></p>
+<p align="center"><img align="top" src="profile/out/boot.svg?v=c15d9f54" width="100%" alt="boot, SYS://ARASH-MANSOURPOUR"><a href="https://arshava.framer.ai/"><img align="top" src="profile/out/links.svg?v=87ef356c" width="100%" alt="01 links"></a><img align="top" src="profile/out/stats.svg?v=651a24da" width="100%" alt="stats"><img align="top" src="profile/out/skyline.svg?v=21bf4aa3" width="100%" alt="contribution skyline, one building per day"><a href="https://github.com/Arash-Mansourpour?tab=repositories"><img align="top" src="profile/out/projects.svg?v=6295314e" width="100%" alt="04 projects"></a><img align="top" src="profile/out/stack.svg?v=c5f3f211" width="100%" alt="stack"><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Mansourpour%2C+Arash%22"><img align="top" src="profile/out/writing.svg?v=704cba04" width="100%" alt="06 publications"></a><img align="top" src="profile/out/exit.svg?v=71d86da1" width="100%" alt="exit"></p>
 
 <details><summary>Text version</summary>
 
@@ -21,10 +21,10 @@ Results-oriented AI Lead and AI Research Engineer specializing in LLMs, RAG, neu
 **Stats**
 
 - Stars across repos: 34
-- Contributions, last 365 days: 97 (active 21 of 365 days)
+- Contributions, last 365 days: 94 (active 20 of 365 days)
 - Pull requests: 0 (0 merged)
-- Streak: 1 day current, 3 longest
-- Followers: 7, forks: 7, public repos: 19, member since Nov 2024 (1y)
+- Streak: 0 days current, 3 longest
+- Followers: 8, forks: 7, public repos: 19, member since Nov 2024 (1y)
 - Top languages: Python (10), JavaScript (1)
 
 **Projects**
